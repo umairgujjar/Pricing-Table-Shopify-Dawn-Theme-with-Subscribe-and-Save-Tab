@@ -1,0 +1,71 @@
+.section.pricing-table {
+  clear: both;
+}
+
+.section.pricing-table .rc_container_wrapper {
+  display: none;
+}
+
+ul.tabs {
+  display: flex;
+  padding: 0;
+  border-top: 0;
+  list-style: none outside;
+  margin: 10px 0 15px;
+  text-align: center;
+  justify-content: center;
+}
+ul.tabs li {
+  padding: 0;
+  margin-bottom: 0;
+  border: 0;
+  list-style: none outside;
+  margin-left: 0;
+}
+ul.tabs li a {
+  display: block;
+  text-decoration: none;
+  width: auto;
+  height: 29px;
+  padding: 0px 15px;
+  line-height: 30px;
+  border-width: 1px 0 0 1px;
+  margin: 0;
+  color: #000;
+  border: solid 1px black;
+  font-size: 13px;
+}
+ul.tabs li a.active {
+  background-color: var(--gradient-base-accent-1);
+  border-bottom: 2px solid black;
+  height: 30px;
+}
+.tabs-content {
+  margin: 0;
+  display: block;
+  border: 0;
+}
+.tabs-content > div {
+  display: none;
+  border: 0;
+}
+.tabs-content > div.active {
+  display: block;
+  border: 0;
+  padding-left: 10px;
+}
+ul.tabs:before,
+ul.tabs:after {
+  content: "\0020";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+ul.tabs:after {
+  clear: both;
+}
+ul.tabs {
+  zoom: 1;
+}
